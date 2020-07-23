@@ -21,9 +21,9 @@ export class AppComponent {
     ){
   }
 
-  async load(){
+  async load(temp: string){
 
-    this.dataServise.data = "Fun of Heuristic";
+    this.dataServise.data = "Este es un proyecto";
     /**
      * Lazy load the component by appending the component data to the DOM
      */
@@ -36,7 +36,8 @@ export class AppComponent {
      */
     
     if(!this.lazyCom){
-      this.data = "Some data"
+      //this.data = "con algún valor"
+      this.data = temp
       this.lazyInjector = Injector.create({
         providers: [{
           provide: 'childComp',

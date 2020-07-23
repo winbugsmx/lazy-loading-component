@@ -1,15 +1,10 @@
-
 <div style="text-align: center;">
-  <h1>Hi</h1>
+    <h1>Hi</h1>
 
-  <ng-template 
-    *ngIf="lazyCom" 
-    [ngComponentOutlet] = "lazyCom | async" 
-    [ngComponentOutletInjector] = "lazyInjector">
-  </ng-template>
+    <ng-template *ngIf="lazyCom" [ngComponentOutlet]="lazyCom | async" [ngComponentOutletInjector]="lazyInjector">
+    </ng-template>
 
-  <h1>Fun of Heuristic</h1>
-<button (click)="load()">Load</button>
-
+    <h1>Fun of Heuristic</h1>
+    <button (click)="load('Hola mundo')">Load</button>
 </div>
 <!-- <h1>Hi</h1> -->

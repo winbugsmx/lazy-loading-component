@@ -28,7 +28,7 @@ export class LazyCompAComponent implements OnInit {
 
     const ref = this.viewContainerRef.createComponent(this.cfr.resolveComponentFactory(LazyChildComponent));
     this.childComp = ref.instance;
-    this.childComp.data = "Subrat";
+    this.childComp.data = "cualquiera";
 
     this.childComp.emitter.subscribe(console.log);
     /**
